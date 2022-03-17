@@ -1,6 +1,6 @@
 :root {
 --primary-color: #7B757C;
---secondary-color: #413235;
+--secondary-color: #747474;
 --tertiary-color: #8C857C;
 }
 
@@ -34,12 +34,32 @@
    text-decoration: none;
    color: white;
    padding: 8px 25px;
+   transition: all .5s ease;
  }
-  h2 {
-      padding: 10 0 10 0;
-  }
 
-  .bio {
+ .header ul li a:hover{
+  background-color: azure;
+  color: black;
+  box-shadow: 0 0 10px white;
+ }
+
+ #home{
+   display: flex;
+   flex-direction: column;
+ }
+
+ #home::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   background: url("hero.jpg") no-repeat center center/cover;
+   height: 900px;
+   width:60%;
+   z-index: -1;
+ }
+  
+  /*.bio {
       color: var(--primary-color);
       display: flex;
 
