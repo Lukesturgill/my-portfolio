@@ -83,11 +83,12 @@ body{
 
   /* Bio/ about me styling*/
   
-  .bio {
+  #bio {
     display: flex;
     flex-direction: column; 
+    flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 50px;
   }
 
@@ -98,7 +99,6 @@ body{
   #pic img{
     width: 575px;
     height: 425px;
-    padding-left: 10px;
     border: 2px solid var(--primary-color);
     border-radius: 12px;
   }
@@ -114,7 +114,6 @@ body{
     font-size: 2rem;
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     -webkit-text-stroke: 2px black;
-    
   }
 
   .intro {
@@ -205,29 +204,37 @@ body{
   .password-generator{
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    justify-content: center;
     align-items: right;
     border:3px solid black;
     border-radius: 12px;
     float: right;
     max-width: 49%;
-   }
+    background-color: #f9fbfd;
+  }
  
-   .password-generator img{
+  .password-generator img{
      display: flex;
      flex-direction: column;
      max-width: 100%;
      border-radius: 8px 8px 0px 0px;
-   }
+  }
  
-   .password-generator h2{
+  .password-generator h2{
      display: flex;
      justify-content: center;
      color: var(--primary-color);
      font-size: 2rem;
      font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
      -webkit-text-stroke: 2px black;
-   }
+  }
+
+  .lower-tabs{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 5px;
+  }
    
    
   
