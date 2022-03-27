@@ -1,7 +1,7 @@
 :root {
---primary-color: #a2f1f7;
---secondary-color: #00abee;
---tertiary-color: #8C857C;
+--primary-color: #014f53;
+--secondary-color: #eee0a3;
+--tertiary-color: #00b8a5;
 }
 
 * { 
@@ -11,7 +11,7 @@
  }
 
   body{
-   background-color: rgb(206, 249, 255);
+   background-color: var(--tertiary-color);
  }
 
  /* header/ navbar styling*/
@@ -21,7 +21,7 @@
    align-items: center;
    position: sticky;
    top: 0;
-   background-color: var(--secondary-color);
+   background-color: var(--tertiary-color);
    opacity: 100%;
  }
 
@@ -89,56 +89,62 @@
    justify-content: center;
    position: relative;
    color: var(--primary-color);
-   font-size: 2rem;
+   font-size: 48px;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    -webkit-text-stroke: 2px var(--secondary-color);
-   padding: 10px 0 10px 0;
+   margin: 0 auto 35px auto;
+   padding-top: 20px;
+   border-bottom: 3px solid var(--secondary-color);
  }
 
   /* Bio/ about me styling*/
   
   #bio {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 10px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
   }
 
-  #pic {
+  /*#pic {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
 
   #pic img{
     display: flex;
-    flex-wrap: wrap;
     width: auto;
     height: 325px;
     border: 3px solid black;
     border-radius: 12px;
-    justify-content: center;
-    align-items: center;
-  }
+  }*/
 
   .intro {
     display: flex;
     flex-wrap: wrap;
-    text-align: justify;
+    flex-direction: row;
     padding: 15px;
     justify-content: center;
     align-items: center;
+    border: 3px solid black;
+    border-radius: 12px 12px 12px 12px;
+    background-color: white;
   }
 
-  .intro h2{
-    font-size: 2rem;
+  .intro h3{
+    font-size: 52px;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 2px var(--secondary-color);
   }
 
+  .intro p{
+    color: black;
+  }
+  
  /*Portfolio styling*/
 
  #portfolio{
@@ -150,7 +156,6 @@
    display: flex;
    flex-direction: column;
    box-sizing: border-box;
-   justify-content: space-between;
  }
 
  .winendine{
@@ -161,6 +166,13 @@
    border:3px solid black;
    border-radius: 12px;
    margin: 10px;
+   background-color: white;
+ }
+
+  .projects img:hover{
+   color: rgb(255, 255, 255);
+   box-shadow: 0 0 10px white;
+   opacity: 50%;
  }
 
  .winendine img{
@@ -172,15 +184,6 @@
    border-radius: 12px 12px 0px 0px;
  }
 
-  .winendine h2{
-   display: flex;
-   justify-content: center;
-   color: var(--primary-color);
-   font-size: 2rem;
-   font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
-   -webkit-text-stroke: 2px var(--secondary-color);
- }
-
  .horiseon{
    display: flex;
    flex-direction: column;
@@ -190,24 +193,16 @@
    border-radius: 12px;
    float: left;
    max-width: 49%;
+   background-color: white;
   }
 
   .horiseon img{
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 8px 8px;
   }
 
-  .horiseon h2{
-    display: flex;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
-    -webkit-text-stroke: 2px var(--secondary-color);
-  }
- 
   .password-generator{
     display: flex;
     flex-direction: column;
@@ -217,7 +212,7 @@
     border-radius: 12px;
     float: right;
     max-width: 49%;
-    background-color: #f9fbfd;
+    background-color: #f5ebeb;
   }
  
   .password-generator img{
@@ -227,28 +222,37 @@
     border-radius: 8px 8px 0px 0px;
   }
  
-  .password-generator h2{
-    display: flex;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 2rem;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
-    -webkit-text-stroke: 2px var(--secondary-color);
-  }
-
   .lower-tabs{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5px;
+    margin: 10px;
   }
 
   /* Contact info styling */
 
+  #contact-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #contact-me h2{
+   display: flex;
+   align-items: left;
+   position: relative;
+   color: var(--primary-color);
+   font-size: 42px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   -webkit-text-stroke: 2px var(--secondary-color);
+   margin: 0 auto 35px auto;
+   padding-top: 20px;
+  }
+
   .contact-info{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
   }
    
   
